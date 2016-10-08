@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Service Status</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Service Status</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,7 +48,6 @@
     .alert > .time {
       font-weight: 400;
       color: rgba(255,255,255,0.8);
-      float: right;
       font-size: 15px;
       position: relative;
       top: 5px;
@@ -169,7 +168,7 @@
   	</div>
   	<div class="container status">
       <!-- Start of Status Alert -->
-      <div class="alert alert-danger">Major outage on Web Server<span class="time">Updated 6 minutes ago</span></div>
+      <div class="alert alert-danger">Major outage on Web Server<span class="time pull-right hidden-xs">Updated 6 minutes ago</span></div>
       <!-- Bottom of Status Alert -->
       <div class="list-group list-group-root well">
 
