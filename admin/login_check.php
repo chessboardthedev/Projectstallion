@@ -8,7 +8,6 @@
 *					*
 *					*
 *****************************************
-
 [WARNING: Outdated browsers can bypass HTML tag 'required', so this is required] 
 
 If input value is empty, return response 'complete' 

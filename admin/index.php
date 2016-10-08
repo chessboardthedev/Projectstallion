@@ -13,6 +13,8 @@ if (!isset($_SESSION['Username'], $_SESSION['ID'])){
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>Service Status</title>
+  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="img/x-icon">
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,6 +25,10 @@ if (!isset($_SESSION['Username'], $_SESSION['ID'])){
       <![endif]-->
     </head> 
     <style>
+      html,body {
+        background-color: rgb(48,48,48);
+        color: white;
+      }
       .page-header {
         border-bottom: none;
         margin-bottom: 0;
@@ -56,6 +62,7 @@ if (!isset($_SESSION['Username'], $_SESSION['ID'])){
       <div class="container col-md-6 col-md-offset-3">
 
         <div class="page-header text-center">
+          <img alt="logo" src="../images/logo.png">
           <h1>Project Stallion</h1>
           <h2>Login Successful</h2>
 

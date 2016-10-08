@@ -1,3 +1,9 @@
+<?php
+if (isset($_SESSION['Username'], $_SESSION['ID'])){
+  header('Location: logout.php');
+  die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>Service Status</title>
+  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="img/x-icon">
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -16,6 +24,10 @@
       <![endif]-->
     </head> 
     <style>
+      html,body {
+        background-color: rgb(48,48,48);
+        color: white;
+      }
       .page-header {
         border-bottom: none;
         margin-bottom: 0;
@@ -49,6 +61,7 @@
       <div class="container col-md-6 col-md-offset-3">
 
         <div class="page-header text-center">
+          <img alt="logo" src="../images/logo.png">
           <h1>Project Stallion</h1>
           <h2>Please Login to proceed</h2>
 
@@ -70,7 +83,7 @@
               /* If response code is 'success', throw error below */
               case("success"):
               echo '<div class="alert alert-success">Login successful, redirecting...</div>';
-              header('Location: index.php');
+              header('refresh:2;url=index.php');
               break;
               /* If response code is empty, throw error below */
               default:
@@ -80,9 +93,9 @@
           }
           ?>
           <label>Username</label>
-          <input type="text" class="form-control" name="username" placeholder="Username" >
+          <input type="text" class="form-control" name="username" placeholder="Username" required>
           <label>Password</label>
-          <input type="password" class="form-control" name="password" placeholder="Password" >
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
           <button class="btn btn-primary form-control" type="submit" name="login">Login</button>
         </form>
       </div>
