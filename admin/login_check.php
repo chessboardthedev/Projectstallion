@@ -1,12 +1,12 @@
 <?php
 /*
 *****************************************
-*										*
-*										*
-*		   Made by @Chessboard 			*
-*	  https://3letteragenices.net		*
-*										*
-*										*
+*					*
+*					*
+*        Made by @Chessboard 		*
+*    https://3letteragenices.net	*
+*					*
+*					*
 *****************************************
 
 [WARNING: Outdated browsers can bypass HTML tag 'required', so this is required] 
