@@ -87,9 +87,9 @@ if (isset($_SESSION['Username'], $_SESSION['ID'])){
           }
           ?>
           <label>Username</label>
-          <input type="text" class="form-control" name="username" placeholder="Username" >
+          <input type="text" class="form-control" name="username" placeholder="Username" required>
           <label>Password</label>
-          <input type="password" class="form-control" name="password" placeholder="Password" >
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
           <button class="btn btn-primary form-control" type="submit" name="login">Login</button>
         </form>
       </div>
