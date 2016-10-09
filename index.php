@@ -18,153 +18,167 @@
       <![endif]-->
     </head> 
     <style>
-     .logo-container {
-      width: 100% !important;
-      max-width: 100% !important;
-      height: 300px;
-      padding: 20px 0 !important;
-      border-bottom: 1px solid #d7d7d7;
-      background: rgb(48,48,48) no-repeat top center;
-      background-size: cover;
-      text-align: center;
-      margin-bottom: 60px !important;
-    }
+      .logo-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 300px;
+        padding: 20px 0 !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: rgb(48,48,48) no-repeat top center;
+        background-size: cover;
+        text-align: center;
+        margin-bottom: 60px !important;
+      }
 
-    .logo-container > .text-center {
-      margin: 60px auto 0;
-      float: none !important;
-      color: white;
-    }
+      .logo-container > .text-center {
+        margin: 30px auto;
+        float: none !important;
+        color: white;
+      }
 
+      .status {
+        width: 90%;
+        max-width: 850px;
+      }
 
-    .status {
-      width: 90%;
-      max-width: 850px;
-    }
+      .alert {
+        font-size: 20px;
+        margin-bottom: 50px;
+        font-weight: 500;
+      }
 
-    .alert {
-      font-size: 20px;
-      margin-bottom: 50px;
-      font-weight: 500;
-    }
+      .alert > .time {
+        font-weight: 400;
+        color: rgba(255,255,255,0.8);
+        font-size: 15px;
+        position: relative;
+        top: 5px;
+      } 
 
-    .alert > .time {
-      font-weight: 400;
-      color: rgba(255,255,255,0.8);
-      font-size: 15px;
-      position: relative;
-      top: 5px;
-    } 
+      .list-group.list-group-root {
+        padding: 0;
+        overflow: hidden;
+      }
 
-    .list-group.list-group-root {
-      padding: 0;
-      overflow: hidden;
-    }
+      .list-group.list-group-root .list-group {
+        margin-bottom: 0;
+      }
 
-    .list-group.list-group-root .list-group {
-      margin-bottom: 0;
-    }
+      .list-group.list-group-root .list-group-item {
+        padding: 15px 20px 15px 20px;
+        border-radius: 0;
+        border-width: 1px 0 0 0;
+      }
 
-    .list-group.list-group-root .list-group-item {
-      padding: 15px 20px 15px 20px;
-      border-radius: 0;
-      border-width: 1px 0 0 0;
-    }
+      .list-group.list-group-root > .list-group-item:first-child {
+        border-top-width: 0;
+      }
 
-    .list-group.list-group-root > .list-group-item:first-child {
-      border-top-width: 0;
-    }
+      .list-group.list-group-root > .list-group > .list-group-item {
+        padding-left: 30px;
+      }
 
-    .list-group.list-group-root > .list-group > .list-group-item {
-      padding-left: 30px;
-    }
+      .list-group.list-group-root > .list-group > .list-group > .list-group-item {
+        padding-left: 45px;
+      }
 
-    .list-group.list-group-root > .list-group > .list-group > .list-group-item {
-      padding-left: 45px;
-    }
+      .list-group.list-group-root > .list-group > .list-group > .list-group-time, .inner{
+        color: grey;
+      }
 
-    .list-group.list-group-root > .list-group > .list-group > .list-group-time, .inner{
-      color: grey;
-    }
+      .top {
+        border-radius: 4px 4px 0 0 !important;
+        -moz-border-radius: 4px 4px 0 0 !important;
+        -webkit-border-radius: 4px 4px 0 0 !important;
+        -o-border-radius: 4px 4px 0 0 !important;
+        -ms-border-radius: 4px 4px 0 0 !important;
+      }
 
-    .top {
-      border-radius: 4px 4px 0 0 !important;
-      -moz-border-radius: 4px 4px 0 0 !important;
-      -webkit-border-radius: 4px 4px 0 0 !important;
-      -o-border-radius: 4px 4px 0 0 !important;
-      -ms-border-radius: 4px 4px 0 0 !important;
-    }
+      .middle {
+        border-radius: 0 0 0 0 !important;
+        -moz-border-radius: 0 0 0 0 !important;
+        -webkit-border-radius: 0 0 0 0 !important;
+        -o-border-radius: 0 0 0 0 !important;
+        -ms-border-radius: 0 0 0 0 !important;
+      }
 
-    .middle {
-      border-radius: 0 0 0 0 !important;
-      -moz-border-radius: 0 0 0 0 !important;
-      -webkit-border-radius: 0 0 0 0 !important;
-      -o-border-radius: 0 0 0 0 !important;
-      -ms-border-radius: 0 0 0 0 !important;
-    }
+      .bottom {
+        border-radius: 0 0 4px 4px !important;
+        -moz-border-radius: 0 0 4px 4px !important;
+        -webkit-border-radius: 0 0 4px 4px !important;
+        -o-border-radius: 0 0 4px 4px !important;
+        -ms-border-radius: 0 0 4px 4px !important;
+      }
 
-    .bottom {
-      border-radius: 0 0 4px 4px !important;
-      -moz-border-radius: 0 0 4px 4px !important;
-      -webkit-border-radius: 0 0 4px 4px !important;
-      -o-border-radius: 0 0 4px 4px !important;
-      -ms-border-radius: 0 0 4px 4px !important;
-    }
+      .text-success,.text-success:hover,.text-danger,.text-danger:hover,.text-warning,.text-warning:hover{
+        font-weight: 400;
+      }
 
-    .text-success,.text-success:hover,.text-danger,.text-danger:hover,.text-warning,.text-warning:hover{
-      font-weight: 400;
-    }
+      .btn-circle {
+        position: relative;
+        border-radius: 99px;
+        -moz-border-radius: 99px;
+        -webkit-border-radius: 99px;
+        -o-border-radius: 99px;
+        -ms-border-radius: 99px;
+        cursor: default;
+        display: inline-block;
+        border-width: 1px;
+        border-style: solid;
+        height: 18px;
+        width: 18px;
+        text-align: center;
+        font-size: .75rem;
+        line-height: 18px;
+        margin-left: 5px;
+        top: 0px;
+        color: #666;
+        font-size: 13px;
+      }
 
-    .btn-circle {
-      position: relative;
-      border-radius: 99px;
-      -moz-border-radius: 99px;
-      -webkit-border-radius: 99px;
-      -o-border-radius: 99px;
-      -ms-border-radius: 99px;
-      cursor: default;
-      display: inline-block;
-      border-width: 1px;
-      border-style: solid;
-      height: 18px;
-      width: 18px;
-      text-align: center;
-      font-size: .75rem;
-      line-height: 18px;
-      margin-left: 5px;
-      top: 0px;
-      color: #666;
-      font-size: 13px;
-    }
+      .fa-expand, a:hover, a:link, a:visited, a:active{
+        color: black;
+        text-decoration: none;
+      }
 
-    .fa-expand, a:hover, a:link, a:visited, a:active{
-      color: black;
-      text-decoration: none;
-    }
+      .incidents {
+        margin-top: 50px;
+      }
 
-    .incidents {
-      margin-top: 50px;
-    }
+      .incidents > .day {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
 
-    .incidents > .day {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
+      .incidents > hr {
+        margin-top: -10px;
+        margin-bottom: 10px;
+      }
 
-    .incidents > hr {
-      margin-top: -10px;
-      margin-bottom: 10px;
-    }
+      .incidents > .incident-details {
+        color: #99aab5;
+        margin-bottom: 20px;
+      }
 
-    .incidents > .incident-details {
-      color: #99aab5;
-      margin-bottom: 20px;
-    }
+      footer{
+        padding: 10px;
+        color: white;
+        background-color: rgb(48,48,48);
+      }
 
-  </style>
-  <body>
-  	<div class="logo-container">
-  		<div class="text-center">
+      footer > .container > p {
+        margin-bottom: 0 !important;
+      }
+
+      footer > .container > p > a {
+        color: white;
+        text-decoration: underline !important;
+      }
+
+    </style>
+    <body>
+     <div class="logo-container">
+      <div class="text-center">
         <img alt="logo" src="images/logo.png">
         <h1>Project Stallion</h1>
       </div>
@@ -230,7 +244,11 @@
 
     </div>
   </div>
-
+  <footer class="footer">
+    <div class="container">
+      <p>Powered by <a href="https://github.com/chessboardthedev/Projectstallion">Project Stallion</a></p>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
